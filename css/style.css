@@ -20,18 +20,47 @@ body {
 header {
   width: 100%;
   height: 15vh;
-  background-color: #e489e4;
   margin: 2% 0% 2% 0%;
+ }
+ header > img {
+   width: 15%;
+   height: 50%;
+   margin-bottom: 3%
+ }
+ li {
+   display: inline-block;
+   list-style: none;
+   font-size: 1em;
+   margin-right: 1%;
  }
 
 /* immagine grossa */
 
 .big_image {
+  position: relative;
   width: 100%;
   height: 60vh;
-  background-color: #e2dc68;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5);
   margin-bottom: 2%;
 }
+.big_image > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.img_title{
+  position: absolute;
+  width: 550px;
+  color: white;
+  bottom: 10%;
+  left: 5%;
+  z-index: 999;
+}
+
+
 
 /* div float */
 
